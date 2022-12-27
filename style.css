@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    height: 100vh;
+  
+    
+   
+   
+    
+   
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 75px;
+    background-color: bisque;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    z-index: 1000;
+    
+
+    
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    
+
+}
+
+
+
+.uzantilar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.uzantilar li a{
+    text-decoration: none;
+    color: black;
+    font size: 40px;
+}
+    
+   
+    
+
+
+.uzantilar  li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+.uzantilar li a:hover::after{
+    width: 100%;
+}
+    
+
+
+.indir{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    padding: 20px;
+    
+
+}
+.buton{
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color:green;
+    background:transparent;
+    position: relative;
+    overflow: hidden;
+    
+}
+.buton:hover{
+    color: #fff;
+}
+
+span{
+    background: black;
+    height: 100%;
+    width:0;
+    border-radius: 8px;
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.buton:hover span{
+   width: 100%;
+}
+.wa{
+    font-size: 30px;
+    font: bold, Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: green;
+    
+}
+.web{
+    font-size: 40px;
+    text-decoration: none;
+    color:black;
+    position: relative;
+}
+.web::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.web:hover::after{
+    width: 100%;
+    
+
+    
+}
+
+.resim{
+    
+    background-color:white;
+    border-radius: 30px;
+    background-image: url(resim.jpg);
+    margin-left: 15px; 
+    margin-right: 30px;
+    height: 600px; 
+      
+    
+
+}
+
+.resim h2{
+    margin-left: 200px;
+    padding-top: 70px;
+    font-size: 50px;
+    color: white;   
+
+    
+}
+    
+.resim p{
+    margin-left: 200px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+
+}
+
+
+
+.resim figure{
+    opacity: (0.6);
+}
+.box{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 800px;
+    top: 150px;
+    }
+.box2{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 750px;
+    top: 100px;
+}
+.box3{
+    width: 420px;
+    height: 250px;
+    position: absolute;
+    left: 800px;
+    top: 250px;
+
+}
+.box4{
+    
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 800px;
+    top: 500px;
+    
+
+
+} 
+.yazii{
+    margin: auto;
+}
